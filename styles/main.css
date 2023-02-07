@@ -1,0 +1,252 @@
+/* media_1 */
+.media_1 .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* solution 1 */
+  /* flex-wrap: wrap; */
+}
+
+/* solution 2 */
+/* @media screen and (max-width: 1100px) {
+  .media_1 .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+} */
+
+.media_1 .box {
+  min-width: 300px;
+  height: 40px;
+}
+
+/* media_2 */
+.media_2 button {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .media_2 button {
+    display: none;
+  }
+}
+
+/* media_3 */
+.media_3 .box {
+  font-size: 50px;
+}
+
+/* why dont work ? move down */
+@media screen and (max-width: 400px) {
+  .media_3 .box {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .media_3 .box {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .media_3 .box {
+    font-size: 80px;
+  }
+}
+
+/* media_4 */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .media_4 .box {
+    background-color: orange;
+  }
+}
+
+/* media_5 */
+@media screen and (min-width: 800px) {
+  .media_5 .box {
+    background-color: rgb(53, 106, 176);
+  }
+}
+
+/* media_6 _____ */
+.media_6 {
+}
+
+@media screen and () {
+  .media_6 {
+  }
+}
+
+@media screen and () {
+  .media_6 {
+  }
+}
+
+/* media_7 _____ */
+.media_7 img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media screen and () {
+  .media_7 img {
+  }
+}
+
+/* media_8 _____ */
+.media_8 .cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.media_8 .box {
+  font-size: 20px;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+
+@media screen and () {
+  .media_8 .box {
+  }
+}
+
+@media screen and () {
+  .media_8 .box {
+  }
+}
+
+@media screen and () {
+  .media_8 .cards {
+  }
+}
+
+/* media_9 */
+/* Написати правила та стилі самостійно */
+
+/* mobile_first */
+.mobile_first {
+  padding: 15px;
+}
+
+.mobile_first hr {
+  width: 100%;
+}
+
+.mobile_first h1 {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.mobile_first .text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2deba;
+  position: relative;
+}
+
+section:nth-child(odd) {
+  background-color: #eac7c7;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #424242;
+  color: #fff;
+  font-weight: bold;
+  margin: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 450px) {
+  .mobile_first {
+    padding: 15px 60px;
+  }
+
+  .mobile_first h1 {
+    font-size: 26px;
+    line-height: 27px;
+  }
+
+  .mobile_first .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mobile_first {
+    padding: 15px 100px;
+  }
+
+  .mobile_first h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+
+  .mobile_first .text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
